@@ -1,0 +1,25 @@
+name: dmc_demo
+log_path: logs/dmc_demo
+gpu_ids: 0
+num_threads: 1
+batch_size: 1
+infer: False
+
+# data
+num_views: 4
+flip_x: False
+
+# network
+mlp_dim: [323, 1024, 512, 256, 128, 1]
+fine_mlp_dim: [355, 512, 256, 128, 1]
+
+# path
+load_netG_checkpoint_path: /media/data1/shaoruizhi/Multiview_Pair/checkpoints/rmask_att_fix_ex/netG_latest
+load_netN_checkpoint_path: /media/data1/shaoruizhi/Multiview_Pair/checkpoints/retrain_fine_mask_att/netN_latest
+
+# smpl
+smpl_faces: lib/data/smplx_fine.obj
+
+# marching cube
+resolution: 256
+mc_threshold: 0.6

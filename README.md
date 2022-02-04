@@ -7,6 +7,25 @@ This repository contains the official pytorch implementation of ”*DeepMultiCap
 
 ![Teaser Image](assets/teaser.jpg)
 
+### News
+* **[2021/9/26]** We added more scans to [MultiHuman dataset](https://github.com/y-zheng18/MultiHuman-Dataset). You can use MultiHuman to train/fine-tune our model or your own models!
+* **[2021/9/18]** [MultiHuman dataset](https://github.com/y-zheng18/MultiHuman-Dataset) for evaluation purpose is available!
+
+## Requirements
+- [PyTorch](https://pytorch.org/)
+- torchvision
+- trimesh
+- numpy
+- matplotlib
+- PIL
+- skimage
+- tqdm
+- cv2
+- json
+- taichi
+- taichi_three
+- taichi_glsl
+
 
 ## Citation
 ```
