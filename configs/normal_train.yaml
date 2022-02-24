@@ -5,4 +5,4 @@ num_threads: 1
 batch_size: 4
 
 # path
-load_netN_checkpoint_path: /media/data1/shaoruizhi/Multiview_Pair/checkpoints/retrain_fine_mask_att/netN_latest
+load_netN_checkpoint_path: checkpoints/demo/netN_latest

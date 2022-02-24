@@ -3,13 +3,16 @@ log_path: logs/dmc_demo
 gpu_ids: 0
 num_threads: 1
 batch_size: 1
-infer: False
+infer: True
+infer_reverse: True
 
 # data
 num_views: 4
+yaw_list: [0, 90, 180, 270]
 flip_x: False
 
 # network
+fine_part: True
 mlp_dim: [323, 1024, 512, 256, 128, 1]
 fine_mlp_dim: [355, 512, 256, 128, 1]
 
@@ -18,8 +21,8 @@ load_netG_checkpoint_path: checkpoints/demo/netG_latest
 load_netN_checkpoint_path: checkpoints/demo/netN_latest
 
 # smpl
-smpl_faces: lib/data/smplx_fine.obj
+smpl_faces: lib/data/smplx_multi.obj
 
 # marching cube
-resolution: 256
-mc_threshold: 0.6
+resolution: 512
+mc_threshold: 0.5

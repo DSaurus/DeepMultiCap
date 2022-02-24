@@ -31,10 +31,7 @@ def read_norm_smpl(path, smpl_faces, flip_normal=False, init_rot=None):
 def render_smpl_global_normal(dataroot, obj_path, faces_path, res=(1024, 1024), angles=range(360), flip_y=False, flip_normal=False, init_rot=None):
     ti.init(ti.cpu)
     pos_save_root = os.path.join(dataroot, 'smpl_pos')
-    img_save_root = os.path.join(dataroot, 'smpl_render')
     os.makedirs(pos_save_root, exist_ok=True)
-    os.makedirs(img_save_root, exist_ok=True)
-    img_path = os.path.join(dataroot, 'img')
     parameter_path = os.path.join(dataroot, 'parameter')
     obj_list = os.listdir(obj_path)
     obj = read_norm_smpl(os.path.join(obj_path, obj_list[0], 'smplx.obj'), faces_path, flip_normal, init_rot)
@@ -55,8 +52,6 @@ def render_smpl_global_normal(dataroot, obj_path, faces_path, res=(1024, 1024), 
     scene.init()
     for obj_name in tqdm(os.listdir(parameter_path)):
         pos_save_path = os.path.join(pos_save_root, obj_name)
-        img_save_path = os.path.join(img_save_root, obj_name)
-        os.makedirs(img_save_path, exist_ok=True)
         if os.path.exists(pos_save_path) and len(os.listdir(os.path.join(pos_save_path))) == len(angles):
             continue
         if not os.path.exists(os.path.join(obj_path, obj_name, 'smplx.obj')):

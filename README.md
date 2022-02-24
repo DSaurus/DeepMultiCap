@@ -26,6 +26,23 @@ This repository contains the official pytorch implementation of ”*DeepMultiCap
 - taichi_three
 - taichi_glsl
 
+## Pretrained Model
+We have provided pretrained model in [One Drive](https://mailstsinghuaeducn-my.sharepoint.com/:f:/g/personal/shaorz20_mails_tsinghua_edu_cn/Et6rFUvWy8VNjC6gDWhpOSoBjZ9ISDTGkaTBumLafQ9asw?e=IQe8Or)
+
+
+## Training
+To train DeepMultiCap model, please run the following code.
+```
+sh render_dataset.sh
+sh trian.sh
+```
+
+## Demo
+Run the following code to inference on the MultiHuman dataset.
+```
+sh render_two.sh
+sh demo.sh
+```
 
 ## Citation
 ```
