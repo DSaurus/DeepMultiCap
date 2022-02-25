@@ -34,7 +34,7 @@ We have provided pretrained model in [One Drive](https://mailstsinghuaeducn-my.s
 To train DeepMultiCap model, please run the following code.
 ```
 sh render_dataset.sh
-sh trian.sh
+sh train.sh
 ```
 
 ## Demo
