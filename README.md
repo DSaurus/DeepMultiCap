@@ -22,9 +22,9 @@ This repository contains the official pytorch implementation of ”*DeepMultiCap
 - tqdm
 - cv2
 - json
-- taichi
+- taichi==0.6.39
 - taichi_three
-- taichi_glsl
+- taichi_glsl==0.0.10
 
 ## Pretrained Model
 We have provided pretrained model in [One Drive](https://mailstsinghuaeducn-my.sharepoint.com/:u:/g/personal/shaorz20_mails_tsinghua_edu_cn/EdVJtlpRplRHvGzQENV8ESQB4E_0ZY3B9l76XHuEowj1YA?e=MZqUxM)
