@@ -22,7 +22,7 @@ This repository contains the official pytorch implementation of ”*DeepMultiCap
 - tqdm
 - cv2
 - json
-- taichi==0.6.39 or 0.7.14
+- taichi==0.6.39 or 0.7.15
 - taichi_three
 - taichi_glsl==0.0.10
 
