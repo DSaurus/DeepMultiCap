@@ -1,0 +1,13 @@
+trimesh
+numpy==1.23.1
+matplotlib
+pillow
+scikit-image==0.18.3
+tqdm
+opencv-python
+opencv_contrib_python
+pypi-json
+taichi==0.7.15
+taichi_three
+taichi_glsl==0.0.10
+tensorboard
