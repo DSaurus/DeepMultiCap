@@ -15,16 +15,24 @@ This repository contains the official pytorch implementation of ”*DeepMultiCap
 - [PyTorch](https://pytorch.org/)
 - torchvision
 - trimesh
-- numpy
+- numpy==1.23.1
 - matplotlib
-- PIL
-- skimage
+- pillow
+- scikit-image==0.18.3
 - tqdm
-- cv2
-- json
-- taichi==0.6.39 or 0.7.15
+- opencv-python
+- opencv_contrib_python
+- pypi-json
+- taichi==0.7.15
 - taichi_three
 - taichi_glsl==0.0.10
+- tensorboard
+
+## Package Installation for CUDA 12.1 and later
+```
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+pip install -r requirements.txt
+```
 
 ## Pretrained Model
 We have provided pretrained model in [One Drive](https://mailstsinghuaeducn-my.sharepoint.com/:u:/g/personal/shaorz20_mails_tsinghua_edu_cn/EdVJtlpRplRHvGzQENV8ESQB4E_0ZY3B9l76XHuEowj1YA?e=MZqUxM)
